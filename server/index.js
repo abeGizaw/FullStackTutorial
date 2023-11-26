@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 //allows you to access json body being parsed directly
 app.use(express.json());
+app.use(cors());
 
 const db = require("./models");
 
